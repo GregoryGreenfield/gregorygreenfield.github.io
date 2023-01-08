@@ -80,6 +80,7 @@ button:hover {
 /* Add an active class to highlight the current page */
 .topnav a.active {
   background: rgba(0, 169, 87);
+  text-align: left;
   color: white;
 }
 
