@@ -22,7 +22,7 @@
             <link rel="stylesheet"
                 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             <div class="topnav" id="myTopnav">
-                <a href="javascript: scrollToForm('Home');" class="active">Home</a>
+                <a href="javascript: scrollToForm('Home');" class="active">Gregory Greenfield</a>
                 <a href="javascript: scrollToForm('Projects');">Projects</a>
                 <a href="javascript: scrollToForm('Skills');">Skills</a>
                 <a href="javascript: scrollToForm('aboutMe');">About Me</a>
@@ -41,10 +41,16 @@
                 <h1 class="mainTitle">Gregory Greenfield, BEng, IEng</h1>
                 <h2 class="subtitle">Developer and Electrical and Electronics Engineer</h2>
                 <div>
-                    <p class="homeText">I am a developer with experience in C microcontroller programming, C# .NET
-                        programming and Python programming, and
-                        an electrical and electronics engineer who has worked with particle accelerators and imaging
+                    <p class="homeText">I am a developer and an electrical and electronics engineer who has worked with
+                        particle accelerators and imaging
                         machines in the healthcare industry.</p>
+                    <div class="skillsLogos">
+                        <img src="images/CLogo.svg" alt="C logo" class="techLogos">
+                        <img src="images/C_Sharp_wordmark.svg" alt="C sharp logo" class="techLogos">
+                        <img src="images/PythonLogoWordmark.svg" alt="python logo" class="techLogos">
+                        <img src="images/PCBIcon.svg" alt="pCB icon" class="techLogos">
+                    </div>
+
                     <img src="images/Greggy.jpg" alt="Mr. Greenfield" class="authorPhoto">
                 </div>
             </div>
@@ -62,12 +68,12 @@
                     <div>
                         <img src="/images/Zither.jpg" alt="Rote learner docker" class="projectImage">
                     </div>
-                    <p class="projectText">My final year university project was to design and create an automatic zither
-                        (stringed instrument) tuner. The PCB microcontroller picks up the frequency of the string using
-                        a zero-cross detection (ZCD) algorithm whenever the string is plucked, and tightens or slackens
-                        the tension in the
-                        string to adjust the frequency to 46.25Hz, known in musical notation as F#1/Gb1. A stepper motor
-                        was used to adjust the tension of the string.</p>
+                    <p class="projectText">Designed, fabricated and programmed an electromechanical automatic string
+                        tuner for my final year university dissertation. </p>
+                    <p class="projectText"> The PCB microcontroller picks up the frequency
+                        of the string using a zero-cross detection (ZCD) algorithm, and tightens or slackens the tension
+                        in the
+                        string to adjust the frequency to 46.25Hz, known in musical notation as F#1/Gb1.</p>
                     <div class="projectTechs">
                         <img src="images/CLogo.svg" alt="C logo" class="techLogos">
                         <img src="images/MPLABLogo.png" alt=".MPLab logo" class="techLogos">
@@ -90,20 +96,19 @@
                         <img src="/images/RoteLearnerIDE.png" alt="Rote learner docker" class="projectImage">
                     </div>
                     <div>
-                        <p class="projectText">This program is a rote learning tool which I wrote to help me learn
-                            natural language vocabulary. It tests the user with their knowledge of specific words
-                            multiple times. It works by connecting to a SQL database populated with words to learn. I
-                            developed it using
-                            VSCode on a Mac and wrote it in C# and SQL.
+                        <p class="projectText">Developed a rote learning tool to help me learn
+                            natural language vocabulary that tests me on specific words
+                            multiple times. It works by connecting to a SQL database populated with words to learn.
                         </p>
-                        <p class="projectText">I learnt Git to implement version control, Docker for containerisation,
+                        <p class="projectText">I learnt Git for implementing version control, Docker for
+                            containerisation,
                             SQL for relational database creation and querying and aspects of C# code such as <i>try</i>
                             and <i>catch</i> statements for exception
                             handling. </p>
                     </div>
                     <div class="projectTechs">
-                        <img src="images/C_Sharp_wordmark.svg" alt="C sharp logo" class="techLogos">
                         <img src="images/DotNetLogo.svg" alt=".Net logo" class="techLogos">
+                        <img src="images/C_Sharp_wordmark.svg" alt="C sharp logo" class="techLogos">
                         <img src="images/DockerLogo.svg" alt="Docker logo" class="techLogos">
                         <img src="images/MicrosoftSQLLogo.svg" alt="SQL logo" class="techLogos">
                         <img src="images/VSCodeLogo.svg" alt="VS code logo" class="techLogos">
@@ -120,11 +125,12 @@
                         <img src="/images/LINACsRunning.png" alt="LINACs running GUI image" class="projectImageGUI">
                     </div>
 
-                    <p class="projectText">This .NET WinForm determines and displays which of the ten LINACs are
+                    <p class="projectText">Created a .NET WinForm that determines and displays which of the ten LINACs
+                        are
                         currently being
-                        used. This helped my colleagues and I utilise precious LINAC free time more efficiently.
-                    <p class="projectText">I learnt about GUI creation and how to create a front-end that ensured the
-                        user to can garner the relevant information with one glance.
+                        used.
+                    <p class="projectText">I learnt about GUI creation and how to create a front-end that ensureds the
+                        user can easily garner the relevant information.
                         information visible at a glance.</p>
                     </p>
                     <div class="techs">
@@ -135,6 +141,8 @@
                 <!-- #endregion -->
 
                 <!--#region Project: This Website -->
+                <!-- Not required to include here. -->
+                <!--                 
                 <div class="projectexample">
                     <div class="projectHeader">
                         <h3>This Website <a href="https://github.com/GregoryGreenfield/gregorygreenfield.github.io"
@@ -160,7 +168,7 @@
                         <img src="images/VSCodeLogo.svg" alt="VSCode logo" class="techLogos">
                         <img src="images/GitLogo.svg" alt="Microchip logo" class="techLogos">
                     </div>
-                </div>
+                </div> -->
                 <!--#endregion -->
 
                 <!--#region Project: Christmas Card Generator -->
@@ -177,11 +185,12 @@
                         <source src="/images/ChristmasCardVid.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
-                    <p class="projectText">I created a Christmas card generator that prints a Christmas message and
+                    <p class="projectText">Created a Christmas card generator that prints a Christmas message and
                         Manelbrot inspired trees and snowflakes, which are generated using
-                        recursive functions. Developed in Python and the turtle graphics module.
+                        recursive functions.
                     </p>
-                    <p>The character curves were created using fibonacci sequences, whilst the non 90° angles (such as
+                    <p class="projectText">The character curves were created using fibonacci sequences, whilst the non
+                        90° angles (such as
                         those in
                         <i>W</i> and <i>Z</i> were determined using triggernometry.
                     </p>
@@ -204,13 +213,15 @@
 
                     </div>
 
-                    <p class="projectText">This program scraped Elekta's website for the calibration files for our 10
-                        linear accelerators using of Selenium
-                        WebDriver module. The data collected was used to help diagnose system faults, reducing down
-                        time. As
-                        the
-                        calibration files were in slightly different forms, it was standardised using a PowerShell
-                        script, afterwhich the data was collated using Excel.
+                    <p class="projectText">Wrote a script that scrapes Elekta's website for the calibration files for
+                        our 10
+                        linear accelerators using Selenium WebDriver module.
+                    </p>
+                    <p class="projectText">
+                        The format of the calibration files were standardised using a PowerShell script, afterwhich the
+                        data was collated using Excel, where the data was used to help diagnose system faults, reducing
+                        down
+                        time.
                     </p>
                     <div class="techs">
                         <img src="images/Python.png" alt="C logo" class="techLogos">
@@ -230,16 +241,20 @@
                     <h1 class="sections">Skills</h1>
                     <div class="skillsLogos">
                         <img src="images/CLogo.svg" alt="C logo" class="techLogos">
-                        <img src="images/MPLABLogo.png" alt=".MPLab logo" class="techLogos">
                         <img src="images/C_Sharp_wordmark.svg" alt="C sharp logo" class="techLogos">
-                        <img src="images/DotNetLogo.svg" alt=".Net logo" class="techLogos">
-                        <img src="images/DockerLogo.svg" alt="Docker logo" class="techLogos">
+                        <img src="images/Python.png" alt="python logo" class="techLogos">
+                        <img src="images/PowershellLogo.png" alt="powerShell logo" class="techLogos">
                         <img src="images/MicrosoftSQLLogo.svg" alt="SQL logo" class="techLogos">
+                        <img src="images/DotNetLogo.svg" alt=".Net logo" class="techLogos">
+                    </div>
+                    <div class="skillsLogos">
+                        <img src="images/DockerLogo.svg" alt="Docker logo" class="techLogos">
+                        <img src="images/LaTeXLogo.svg" alt="LaTeX logo" class="techLogos">
+                    </div>
+                    <div class="skillsLogos">
+                        <img src="images/MPLABLogo.png" alt=".MPLab logo" class="techLogos">
                         <img src="images/VSCodeLogo.svg" alt="VS code logo" class="techLogos">
                         <img src="images/VSLogo.png" alt="Visual Studio logo" class="techLogos">
-                        <img src="images/PowershellLogo.png" alt="powerShell logo" class="techLogos">
-                        <img src="images/LaTeXLogo.svg" alt="LaTeX logo" class="techLogos">
-                        <img src="images/Python.png" alt="python logo" class="techLogos">
                         <img src="images/GitLogo.svg" alt="Git logo" class="techLogos">
                         <img src="images/PCBIcon.svg" alt="pCB icon" class="techLogos">
                     </div>
@@ -251,7 +266,7 @@
             <div class="aboutMe" id="aboutMe">
                 <h1 class="sections">About Me</h1>
                 <div class="languagesSpoken">
-                    <p class="projectText">I love to play the drum kit and piano, read and go on bike rides.</p>
+                    <p class="projectText">I love to play the drums and piano, read and go on bike rides.</p>
                     <img src="images/drumIcon.svg" alt="Spanish flag" class="techLogos">
                     <img src="images/pianoIcon.svg" alt="Spanish flag" class="techLogos">
                     <img src="images/booksIcon.svg" alt="Spanish flag" class="techLogos">
@@ -288,12 +303,12 @@
                     </div>
                     <!-- Footer links -->
                     <div>
-                        <a href="https://www.w3schools.com/" target="_blank"> <i
+                        <a href="https://www.linkedin.com/in/gregory-greenfield-50a204257/" target="_blank"> <i
                                 class="fa fa-linkedin-square fa-3x"></i></a>
                         <a href="https://github.com/GregoryGreenfield" target="_blank"> <i
                                 class="fa fa-github fa-3x"></i></a>
                         <a href="mailto:gregorysmgreenfield@gmail.com"> <i class="fa fa-envelope fa-3x"></i></a>
-                        <p style="padding: 2vh;">© Gregory Greenfield 2023</p>
+                        <p style="padding: 2vh;">Built by Gregory Greenfield © 2023</p>
                     </div>
                 </div>
             </div>
