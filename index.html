@@ -1,5 +1,7 @@
+<!-- #region Website -->
 <!DOCTYPE html>
 <html lang="en">
+    <!--#region Head definition  -->
 
     <head>
         <meta charset="UTF-8">
@@ -10,9 +12,12 @@
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title>Gregory Greenfield</title>
     </head>
+    <!--#endregion  -->
+
+    <!-- #region Body of Website -->
 
     <body>
-        <!-- Navigation bar -->
+        <!--#region Navigation bar -->
         <div class="NavBar" id="Home">
             <link rel="stylesheet"
                 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -20,201 +25,288 @@
                 <a href="javascript: scrollToForm('Home');" class="active">Home</a>
                 <a href="javascript: scrollToForm('Projects');">Projects</a>
                 <a href="javascript: scrollToForm('Skills');">Skills</a>
-                <a href="javascript: scrollToForm('CV');">Curriculum vitaes</a>
+                <a href="javascript: scrollToForm('aboutMe');">About Me</a>
+                <a href="javascript: scrollToForm('CV');">CVs and Contact</a>
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                     <i class="fa fa-bars"></i>
                 </a>
             </div>
         </div>
+        <!--#endregion  -->
 
-        <!-- Not navigation bar elements -->
+        <!--#region Not navigation bar elements -->
         <div class="notNavBar">
             <!-- Title page -->
             <div class="titlepage">
-                <h1 class="bigTitle">Gregory Greenfield, BEng, IEng</h1>
-                <h2 class="subtitle">Full Stack Developer and Electrical Engineer</h2>
+                <h1 class="mainTitle">Gregory Greenfield, BEng, IEng</h1>
+                <h2 class="subtitle">Developer and Electrical and Electronics Engineer</h2>
                 <div>
-                    <p class="aboutMe">I am a developer with experience in C microcontroller programming, C# .NET
-                        programming
-                        and Python programming. I also have significant experience as an electrical and
-                        electronics
-                        engineer in the healthcare industry.</p>
-                    <img src="images/greggy.jpg" alt="Mr. Greenfield" class="authorPhoto">
+                    <p class="homeText">I am a developer with experience in C microcontroller programming, C# .NET
+                        programming and Python programming, and
+                        an electrical and electronics engineer who has worked with particle accelerators and imaging
+                        machines in the healthcare industry.</p>
+                    <img src="images/Greggy.jpg" alt="Mr. Greenfield" class="authorPhoto">
                 </div>
             </div>
 
-            <!-- Projects section -->
-            <div class="Projects" id="Projects">
+            <!--#region Projects section -->
+            <div class="projects" id="Projects">
                 <h1 class="sections">Projects</h1>
-
+                <!--#region Project: Automatic String Tuner -->
                 <div class="projectexample">
-                    <div class="ProjectHeader">
-                        <h3>Rote Language Learner <a
-                                href="https://github.com/GregoryGreenfield/RoteLanguageLearnerCSharpSQL"
-                                target="_blank"> <i class="fa fa-github"></i></a></h3>
-                    </div>
-                    <div>
-                        <img src="/images/RoteLearnerIDE.png" alt="Rote learner docker" class="ProjectImage">
-                    </div>
-                    <div>
-                        <p class="projectText">This program is a rote learning tool. It tests the user with their
-                            knowledge
-                            of
-                            German multiple times. It connects to a SQL database of German words, hosted on Docker. It
-                            was
-                            developed using VSCode on a Mac and written in C# and SQL.
-                        </p>
-                    </div>
-                    <div class="ProjectTechs">
-                        <img src="images/C_Sharp_wordmark.svg" alt="C sharp logo" class="Techlogos">
-                        <img src="images/DotNetLogo.svg" alt=".Net logo" class="Techlogos">
-                        <img src="images/DockerLogo.svg" alt="Docker logo" class="Techlogos">
-                        <img src="images/MicrosoftSQLLogo.svg" alt="SQL logo" class="Techlogos">
-                        <img src="images/VSCodeLogo.svg" alt="VS code logo" class="Techlogos">
-                        <img src="images/GitLogo.svg" alt="Git logo" class="Techlogos">
-                    </div>
-                </div>
-                <div class="projectexample">
-                    <div class="ProjectHeader">
+                    <div class="projectHeader">
                         <h3>Automatic String Tuner <a
                                 href="https://github.com/GregoryGreenfield/ZitherTunerMicrocontroller" target="_blank">
                                 <i class="fa fa-github"></i></a></h3>
                     </div>
                     <div>
-                        <img src="/images/Zither.jpg" alt="Rote learner docker" class="ProjectImage">
+                        <img src="/images/Zither.jpg" alt="Rote learner docker" class="projectImage">
                     </div>
-                    <p class="projectText">My third year university project was to design and create an automatic zither
-                        (stringed
-                        instrument)
-                        tuner. The PCB microcontroller picks up the frequency of the string using a zero-cross detection
-                        (ZCD) algorithm whenever the string is plucked, and tightens or slackens the tension in the
-                        string
-                        to change the frequency to 46.25Hz, known in musical notation as F#1/Gb1. A stepper motor was
-                        used
-                        to change the tension of the string.</p>
-                    <div class="ProjectTechs">
-                        <img src="images/CLogo.svg" alt="C logo" class="Techlogos">
-                        <img src="images/MPLABLogo.png" alt=".MPLab logo" class="Techlogos">
-                        <img src="images/MicroChipLogo.png" alt="Microchip logo" class="Techlogos">
-                        <img src="images/UoMLogo.gif" alt="UoM logo" class="Techlogos">
+                    <p class="projectText">My final year university project was to design and create an automatic zither
+                        (stringed instrument) tuner. The PCB microcontroller picks up the frequency of the string using
+                        a zero-cross detection (ZCD) algorithm whenever the string is plucked, and tightens or slackens
+                        the tension in the
+                        string to adjust the frequency to 46.25Hz, known in musical notation as F#1/Gb1. A stepper motor
+                        was used to adjust the tension of the string.</p>
+                    <div class="projectTechs">
+                        <img src="images/CLogo.svg" alt="C logo" class="techLogos">
+                        <img src="images/MPLABLogo.png" alt=".MPLab logo" class="techLogos">
+                        <img src="images/MicroChipLogo.png" alt="Microchip logo" class="techLogos">
+                        <img src="images/UoMLogo.jpg" alt="UoM logo" class="techLogos">
+                        <img src="images/PCBIcon.svg" alt="PCB icon" class="techLogos">
+
                     </div>
                 </div>
+                <!--#endregion  -->
 
+                <!--#region Project: Rote Language Learner -->
                 <div class="projectexample">
-                    <div class="ProjectHeader">
+                    <div class="projectHeader">
+                        <h3>Rote Language Learner <a
+                                href="https://github.com/GregoryGreenfield/RoteLanguageLearnerCSharpSQL"
+                                target="_blank"> <i class="fa fa-github"></i></a></h3>
+                    </div>
+                    <div>
+                        <img src="/images/RoteLearnerIDE.png" alt="Rote learner docker" class="projectImage">
+                    </div>
+                    <div>
+                        <p class="projectText">This program is a rote learning tool which I wrote to help me learn
+                            natural language vocabulary. It tests the user with their knowledge of specific words
+                            multiple times. It works by connecting to a SQL database populated with words to learn. I
+                            developed it using
+                            VSCode on a Mac and wrote it in C# and SQL.
+                        </p>
+                        <p class="projectText">I learnt Git to implement version control, Docker for containerisation,
+                            SQL for relational database creation and querying and aspects of C# code such as <i>try</i>
+                            and <i>catch</i> statements for exception
+                            handling. </p>
+                    </div>
+                    <div class="projectTechs">
+                        <img src="images/C_Sharp_wordmark.svg" alt="C sharp logo" class="techLogos">
+                        <img src="images/DotNetLogo.svg" alt=".Net logo" class="techLogos">
+                        <img src="images/DockerLogo.svg" alt="Docker logo" class="techLogos">
+                        <img src="images/MicrosoftSQLLogo.svg" alt="SQL logo" class="techLogos">
+                        <img src="images/VSCodeLogo.svg" alt="VS code logo" class="techLogos">
+                        <img src="images/GitLogo.svg" alt="Git logo" class="techLogos">
+                    </div>
+                </div>
+                <!--#endregion  -->
+
+                <!--#region Project: Are LINACs In Use? -->
+                <div class="projectexample">
+                    <div class="projectHeader">
+                        <h3> Are LINACs In Use? <a href="https://github.com/GregoryGreenfield/WindowsFormsCSharp"
+                                target="_blank"> <i class="fa fa-github"></i></a></h3>
+                        <img src="/images/LINACsRunning.png" alt="LINACs running GUI image" class="projectImageGUI">
+                    </div>
+
+                    <p class="projectText">This .NET WinForm determines and displays which of the ten LINACs are
+                        currently being
+                        used. This helped my colleagues and I utilise precious LINAC free time more efficiently.
+                    <p class="projectText">I learnt about GUI creation and how to create a front-end that ensured the
+                        user to can garner the relevant information with one glance.
+                        information visible at a glance.</p>
+                    </p>
+                    <div class="techs">
+                        <img src="images/CSharp.png" alt="C logo" class="techLogos">
+                        <img src="images/VSLogo.png" alt="Selenium logo" class="techLogos">
+                    </div>
+                </div>
+                <!-- #endregion -->
+
+                <!--#region Project: This Website -->
+                <div class="projectexample">
+                    <div class="projectHeader">
+                        <h3>This Website <a href="https://github.com/GregoryGreenfield/gregorygreenfield.github.io"
+                                target="_blank"> <i class="fa fa-github"></i></a></h3>
+                        <img src="/images/WebsiteDevPhoto.png" alt="Website image" class="projectImage">
+                    </div>
+
+                    <p class="projectText">I created this website in order to showcase some of the exciting
+                        projects
+                        I have been working on.
+                    <p class="projectText">
+                        I learnt HTML5, CSS3 and a smidgen of Javascript in order to build this,
+                        and hosted it using GitHub pages. I learnt how vital it is to keep the HTML elements and CSS
+                        styles
+                        simple, especially as the layout needs to work and look clean on a variety of display types. I
+                        also learnt how vital other people's experience and feedback is when creating a user experience.
+                    </p>
+                    </p>
+                    <div class="techs">
+                        <img src="images/HTML5Logo.svg" alt="C logo" class="techLogos">
+                        <img src="images/CSS3Logo.svg" alt="Selenium logo" class="techLogos">
+                        <img src="images/JavaScriptLogo.png" alt="Selenium logo" class="techLogos">
+                        <img src="images/VSCodeLogo.svg" alt="VSCode logo" class="techLogos">
+                        <img src="images/GitLogo.svg" alt="Microchip logo" class="techLogos">
+                    </div>
+                </div>
+                <!--#endregion -->
+
+                <!--#region Project: Christmas Card Generator -->
+                <div class="projectexample">
+                    <div class="projectHeader">
                         <h3>Christmas Card Generator <a
                                 href="https://github.com/GregoryGreenfield/MandelbrotChristmasCardGenerator"
                                 target="_blank"> <i class="fa fa-github"></i></a></h3>
                         <!-- <div>
-                            <img src="/images/ChristmasCardImg.png" alt="Christmas card image" class="ProjectImage">
+                            <img src="/images/ChristmasCardImg.png" alt="Christmas card image" class="projectImage">
                         </div> -->
                     </div>
-                    <video width="320" controls autoplay class="ProjectImage">
+                    <video width="320" controls autoplay class="projectImage">
                         <source src="/images/ChristmasCardVid.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
-                    <p class="projectText">Created a Christmas card generator that prints a Christmas message, trees and
-                        snowflakes, which are generated using
+                    <p class="projectText">I created a Christmas card generator that prints a Christmas message and
+                        Manelbrot inspired trees and snowflakes, which are generated using
                         recursive functions. Developed in Python and the turtle graphics module.
                     </p>
+                    <p>The character curves were created using fibonacci sequences, whilst the non 90° angles (such as
+                        those in
+                        <i>W</i> and <i>Z</i> were determined using triggernometry.
+                    </p>
                     <div class="techs">
-                        <img src="images/Python.png" alt="C logo" class="Techlogos">
-                        <img src="images/VSCodeLogo.svg" alt=".MPLab logo" class="Techlogos">
-                        <img src="images/GitLogo.svg" alt="Microchip logo" class="Techlogos">
+                        <img src="images/Python.png" alt="C logo" class="techLogos">
+                        <img src="images/VSCodeLogo.svg" alt=".MPLab logo" class="techLogos">
+                        <img src="images/GitLogo.svg" alt="Microchip logo" class="techLogos">
                     </div>
                 </div>
+                <!--#endregion -->
 
+                <!--#region Project: Calibration Files Webscraper -->
                 <div class="projectexample">
-                    <div class="ProjectHeader">
+                    <div class="projectHeader">
                         <h3>Calibration Files Webscraper <a
                                 href="https://github.com/GregoryGreenfield/SeleniumConfigurationCollator"
-                                target="_blank"> <i class="fa fa-github"></i></a></h3>
-                        <img src="/images/Elephant.jpg" alt="Christmas card image" class="ProjectImage">
+                                target="_blank">
+                                <i class="fa fa-github"></i></a></h3>
+                        <img src="/images/SeleniumScript.png" alt="Christmas card image" class="projectImage">
 
                     </div>
 
-                    <p class="projectText">This program opens up the 10 LINAC energy configuration files from Elekta's
-                        website. It does this by using Selenium
-                        WebDriver. This data was used to help diagnose faults at the Christie. The data form was
-                        standardised using a PowerShell
+                    <p class="projectText">This program scraped Elekta's website for the calibration files for our 10
+                        linear accelerators using of Selenium
+                        WebDriver module. The data collected was used to help diagnose system faults, reducing down
+                        time. As
+                        the
+                        calibration files were in slightly different forms, it was standardised using a PowerShell
                         script, afterwhich the data was collated using Excel.
                     </p>
                     <div class="techs">
-                        <img src="images/Python.png" alt="C logo" class="Techlogos">
-                        <img src="images/VSCodeLogo.svg" alt="VSCode logo" class="Techlogos">
-                        <img src="images/SeleniumLogo.svg" alt="Selenium logo" class="Techlogos">
-                        <img src="images/PowershellLogo.png" alt="Selenium logo" class="Techlogos">
-                        <img src="images/GitLogo.svg" alt="Microchip logo" class="Techlogos">
+                        <img src="images/Python.png" alt="C logo" class="techLogos">
+                        <img src="images/VSCodeLogo.svg" alt="VSCode logo" class="techLogos">
+                        <img src="images/SeleniumLogo.svg" alt="Selenium logo" class="techLogos">
+                        <img src="images/PowershellLogo.png" alt="Selenium logo" class="techLogos">
+                        <img src="images/GitLogo.svg" alt="Microchip logo" class="techLogos">
                     </div>
                 </div>
-
-                <div class="projectexample">
-                    <div class="ProjectHeader">
-                        <h3>This Website</h3>
-                        <img src="/images/Elephant.jpg" alt="Christmas card image" class="ProjectImage">
-                    </div>
-
-                    <p class="projectText">I knocked out this website to see what HTML, CSS and Javascript are all
-                        about.
-                    </p>
-                    <div class="techs">
-                        <img src="images/HTML5Logo.svg" alt="C logo" class="Techlogos">
-                        <img src="images/CSS3Logo.svg" alt="Selenium logo" class="Techlogos">
-                        <img src="images/JavaScriptLogo.png" alt="Selenium logo" class="Techlogos">
-                        <img src="images/VSCodeLogo.svg" alt="VSCode logo" class="Techlogos">
-                        <img src="images/GitLogo.svg" alt="Microchip logo" class="Techlogos">
-                    </div>
-                </div>
+                <!--#endregion -->
             </div>
+            <!--#endregion -->
 
-            <!-- Skill section -->
+            <!--#region Skill section -->
             <div class="Skills" id="Skills">
                 <div>
                     <h1 class="sections">Skills</h1>
-                    <div class="SkillsLogos">
-                        <img src="images/CLogo.svg" alt="C logo" class="Techlogos">
-                        <img src="images/MPLABLogo.png" alt=".MPLab logo" class="Techlogos">
-                        <img src="images/C_Sharp_wordmark.svg" alt="C sharp logo" class="Techlogos">
-                        <img src="images/DotNetLogo.svg" alt=".Net logo" class="Techlogos">
-                        <img src="images/DockerLogo.svg" alt="Docker logo" class="Techlogos">
-                        <img src="images/MicrosoftSQLLogo.svg" alt="SQL logo" class="Techlogos">
-                        <img src="images/VSCodeLogo.svg" alt="VS code logo" class="Techlogos">
-                        <img src="images/Python.png" alt="VS code logo" class="Techlogos">
-                        <img src="images/GitLogo.svg" alt="Git logo" class="Techlogos">
+                    <div class="skillsLogos">
+                        <img src="images/CLogo.svg" alt="C logo" class="techLogos">
+                        <img src="images/MPLABLogo.png" alt=".MPLab logo" class="techLogos">
+                        <img src="images/C_Sharp_wordmark.svg" alt="C sharp logo" class="techLogos">
+                        <img src="images/DotNetLogo.svg" alt=".Net logo" class="techLogos">
+                        <img src="images/DockerLogo.svg" alt="Docker logo" class="techLogos">
+                        <img src="images/MicrosoftSQLLogo.svg" alt="SQL logo" class="techLogos">
+                        <img src="images/VSCodeLogo.svg" alt="VS code logo" class="techLogos">
+                        <img src="images/VSLogo.png" alt="Visual Studio logo" class="techLogos">
+                        <img src="images/PowershellLogo.png" alt="powerShell logo" class="techLogos">
+                        <img src="images/LaTeXLogo.svg" alt="LaTeX logo" class="techLogos">
+                        <img src="images/Python.png" alt="python logo" class="techLogos">
+                        <img src="images/GitLogo.svg" alt="Git logo" class="techLogos">
+                        <img src="images/PCBIcon.svg" alt="pCB icon" class="techLogos">
                     </div>
                 </div>
             </div>
+            <!--#endregion  -->
 
-            <!-- CV -->
+            <!--#region About me -->
+            <div class="aboutMe" id="aboutMe">
+                <h1 class="sections">About Me</h1>
+                <div class="languagesSpoken">
+                    <p class="projectText">I love to play the drum kit and piano, read and go on bike rides.</p>
+                    <img src="images/drumIcon.svg" alt="Spanish flag" class="techLogos">
+                    <img src="images/pianoIcon.svg" alt="Spanish flag" class="techLogos">
+                    <img src="images/booksIcon.svg" alt="Spanish flag" class="techLogos">
+                    <img src="images/bicycleIcon.svg" alt="Spanish flag" class="techLogos">
+
+                    <p class="projectText">I am a native speaker of English, conversational speaker of Spanish and
+                        learning
+                        German.</p>
+                    <img src="images/EnglishIcon.svg" alt="English language" class="techLogos">
+                    <img src="images/SpanishIcon.svg" alt="Spanish language" class="techLogos">
+
+
+                    <p class="projectText">I am a British and Spanish (EU) citizen.</p>
+                    <img src="images/UKIcon.svg" alt="UK flag" class="techLogos">
+                    <img src="images/SpainIcon.svg" alt="Spanish flag" class="techLogos">
+                </div>
+            </div>
+            <!--#endregion  -->
+
+            <!--#region CV -->
             <div class="CVs" id="CV">
                 <div>
                     <div>
-                        <h1 class="sections">Curriculum Vitaes</h1>
-                        <a href="/images/GregoryGreenfieldCurriculumVitaeFull.pdf"
-                            download="GregoryGreenfieldCurriculumVitaeFull">
+                        <h1 class="sections">Curriculum Vitaes and Contact</h1>
+                        <a href="/CVs/GregoryGreenfieldCVDeveloper.pdf" download="GregoryGreenfieldCVDeveloper">
                             <button class="downloadCV">Developer CV</button>
                         </a>
                     </div>
                     <div>
-                        <a href="/images/GregoryGreenfieldCurriculumVitaeFull.pdf"
-                            download="GregoryGreenfieldCurriculumVitaeFull">
+                        <a href="/CVs/GregoryGreenfieldCVElectricalEngineer.pdf"
+                            download="GregoryGreenfieldCVElectricalEngineer">
                             <button class="downloadCV">Electrical Engineer CV</button>
                         </a>
                     </div>
+                    <!-- Footer links -->
+                    <div>
+                        <a href="https://www.w3schools.com/" target="_blank"> <i
+                                class="fa fa-linkedin-square fa-3x"></i></a>
+                        <a href="https://github.com/GregoryGreenfield" target="_blank"> <i
+                                class="fa fa-github fa-3x"></i></a>
+                        <a href="mailto:gregorysmgreenfield@gmail.com"> <i class="fa fa-envelope fa-3x"></i></a>
+                        <p style="padding: 2vh;">© Gregory Greenfield 2023</p>
+                    </div>
                 </div>
             </div>
+            <!--#endregion  -->
 
-            <!-- Footer links -->
-            <div class="links">
-                <a href="https://www.w3schools.com/" target="_blank"> <i class="fa fa-linkedin-square fa-3x"></i></a>
-                <a href="https://github.com/GregoryGreenfield" target="_blank"> <i class="fa fa-github fa-3x"></i></a>
-                <a href="mailto:gregorysmgreenfield@gmail.com"> <i class="fa fa-envelope fa-3x"></i></a>
-                <p style="padding: 2vh;">© Copyright 2023 all rights reserved</p>
-            </div>
         </div>
+        <!--#endregion  -->
+
         <!-- Javascript files -->
         <script src="script.js"></script>
 
     </body>
+    <!--#endregion  -->
 
 </html>
+<!--#endregion  -->
