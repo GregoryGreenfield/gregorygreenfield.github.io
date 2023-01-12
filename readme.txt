@@ -1,1 +1,0 @@
-Started constructing my own website/portfolio.
