@@ -1153,3 +1153,13 @@ nav .active-section span {
   text-align: left;
   float: center;
 }
+
+.bottomContactIconsContainer {
+  text-align: left;
+  padding: 1vh;
+}
+
+.bottomIcon {
+  /* padding-left: 2vw; */
+  padding-right: 4vw;
+}
